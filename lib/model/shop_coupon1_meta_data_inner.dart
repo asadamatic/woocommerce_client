@@ -43,7 +43,7 @@ class ShopCoupon1MetaDataInner {
   /// source code must fall back to having a nullable type.
   /// Consider adding a "default:" property in the specification file to hide this note.
   ///
-  String? value;
+  dynamic value;
 
   @override
   bool operator ==(Object other) =>
@@ -107,7 +107,7 @@ class ShopCoupon1MetaDataInner {
       return ShopCoupon1MetaDataInner(
         id: mapValueOfType<int>(json, r'id'),
         key: mapValueOfType<String>(json, r'key'),
-        value: mapValueOfType<String>(json, r'value'),
+        value: mapValueOfType<dynamic>(json, r'value'),
       );
     }
     return null;
