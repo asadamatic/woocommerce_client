@@ -26,7 +26,7 @@ Iterable<QueryParam> _queryParams(
   if (value is List) {
     params.add(QueryParam(
       name,
-      parameterToString(value),
+      value.join(","),
     ));
   } else if (value != null) {
     params.add(QueryParam(name, parameterToString(value)));
