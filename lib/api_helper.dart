@@ -9,7 +9,7 @@ class QueryParam {
   final String value;
 
   @override
-  String toString() => '${Uri.encodeQueryComponent(name)}=${"$value"}';
+  String toString() => '$name=$value';
 }
 
 // Ported from the Java version.
