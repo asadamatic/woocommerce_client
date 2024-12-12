@@ -92,49 +92,49 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (after != null) {
-      queryParams.addAll(_queryParams('', 'after', after));
+      queryParams.addAll(_queryParams('after', after));
     }
     if (before != null) {
-      queryParams.addAll(_queryParams('', 'before', before));
+      queryParams.addAll(_queryParams('before', before));
     }
     if (modifiedAfter != null) {
-      queryParams.addAll(_queryParams('', 'modified_after', modifiedAfter));
+      queryParams.addAll(_queryParams('modified_after', modifiedAfter));
     }
     if (modifiedBefore != null) {
-      queryParams.addAll(_queryParams('', 'modified_before', modifiedBefore));
+      queryParams.addAll(_queryParams('modified_before', modifiedBefore));
     }
     if (datesAreGmt != null) {
-      queryParams.addAll(_queryParams('', 'dates_are_gmt', datesAreGmt));
+      queryParams.addAll(_queryParams('dates_are_gmt', datesAreGmt));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (code != null) {
-      queryParams.addAll(_queryParams('', 'code', code));
+      queryParams.addAll(_queryParams('code', code));
     }
 
     const contentTypes = <String>[];
@@ -270,7 +270,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -340,7 +340,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -658,7 +658,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -765,37 +765,37 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (email != null) {
-      queryParams.addAll(_queryParams('', 'email', email));
+      queryParams.addAll(_queryParams('email', email));
     }
     if (role != null) {
-      queryParams.addAll(_queryParams('', 'role', role));
+      queryParams.addAll(_queryParams('role', role));
     }
 
     const contentTypes = <String>[];
@@ -915,10 +915,10 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
     if (reassign != null) {
-      queryParams.addAll(_queryParams('', 'reassign', reassign));
+      queryParams.addAll(_queryParams('reassign', reassign));
     }
 
     const contentTypes = <String>[];
@@ -993,7 +993,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -1774,65 +1774,64 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (after != null) {
-      queryParams.addAll(_queryParams('', 'after', after));
+      queryParams.addAll(_queryParams('after', after));
     }
     if (before != null) {
-      queryParams.addAll(_queryParams('', 'before', before));
+      queryParams.addAll(_queryParams('before', before));
     }
     if (modifiedAfter != null) {
-      queryParams.addAll(_queryParams('', 'modified_after', modifiedAfter));
+      queryParams.addAll(_queryParams('modified_after', modifiedAfter));
     }
     if (modifiedBefore != null) {
-      queryParams.addAll(_queryParams('', 'modified_before', modifiedBefore));
+      queryParams.addAll(_queryParams('modified_before', modifiedBefore));
     }
     if (datesAreGmt != null) {
-      queryParams.addAll(_queryParams('', 'dates_are_gmt', datesAreGmt));
+      queryParams.addAll(_queryParams('dates_are_gmt', datesAreGmt));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (parent != null) {
-      queryParams.addAll(_queryParams('multi', 'parent', parent));
+      queryParams.addAll(_queryParams('parent', parent));
     }
     if (parentExclude != null) {
-      queryParams
-          .addAll(_queryParams('multi', 'parent_exclude', parentExclude));
+      queryParams.addAll(_queryParams('parent_exclude', parentExclude));
     }
     if (status != null) {
-      queryParams.addAll(_queryParams('multi', 'status', status));
+      queryParams.addAll(_queryParams('status', status));
     }
     if (customer != null) {
-      queryParams.addAll(_queryParams('', 'customer', customer));
+      queryParams.addAll(_queryParams('customer', customer));
     }
     if (product != null) {
-      queryParams.addAll(_queryParams('', 'product', product));
+      queryParams.addAll(_queryParams('product', product));
     }
     if (dp != null) {
-      queryParams.addAll(_queryParams('', 'dp', dp));
+      queryParams.addAll(_queryParams('dp', dp));
     }
 
     const contentTypes = <String>[];
@@ -1993,7 +1992,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -2063,7 +2062,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -2330,10 +2329,10 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (type != null) {
-      queryParams.addAll(_queryParams('', 'type', type));
+      queryParams.addAll(_queryParams('type', type));
     }
 
     const contentTypes = <String>[];
@@ -2415,7 +2414,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -2496,7 +2495,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -2701,56 +2700,55 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (after != null) {
-      queryParams.addAll(_queryParams('', 'after', after));
+      queryParams.addAll(_queryParams('after', after));
     }
     if (before != null) {
-      queryParams.addAll(_queryParams('', 'before', before));
+      queryParams.addAll(_queryParams('before', before));
     }
     if (modifiedAfter != null) {
-      queryParams.addAll(_queryParams('', 'modified_after', modifiedAfter));
+      queryParams.addAll(_queryParams('modified_after', modifiedAfter));
     }
     if (modifiedBefore != null) {
-      queryParams.addAll(_queryParams('', 'modified_before', modifiedBefore));
+      queryParams.addAll(_queryParams('modified_before', modifiedBefore));
     }
     if (datesAreGmt != null) {
-      queryParams.addAll(_queryParams('', 'dates_are_gmt', datesAreGmt));
+      queryParams.addAll(_queryParams('dates_are_gmt', datesAreGmt));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (parent != null) {
-      queryParams.addAll(_queryParams('multi', 'parent', parent));
+      queryParams.addAll(_queryParams('parent', parent));
     }
     if (parentExclude != null) {
-      queryParams
-          .addAll(_queryParams('multi', 'parent_exclude', parentExclude));
+      queryParams.addAll(_queryParams('parent_exclude', parentExclude));
     }
     if (dp != null) {
-      queryParams.addAll(_queryParams('', 'dp', dp));
+      queryParams.addAll(_queryParams('dp', dp));
     }
 
     const contentTypes = <String>[];
@@ -2907,7 +2905,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -2988,7 +2986,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -3179,7 +3177,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -3245,7 +3243,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -3556,43 +3554,43 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (hideEmpty != null) {
-      queryParams.addAll(_queryParams('', 'hide_empty', hideEmpty));
+      queryParams.addAll(_queryParams('hide_empty', hideEmpty));
     }
     if (parent != null) {
-      queryParams.addAll(_queryParams('', 'parent', parent));
+      queryParams.addAll(_queryParams('parent', parent));
     }
     if (product != null) {
-      queryParams.addAll(_queryParams('', 'product', product));
+      queryParams.addAll(_queryParams('product', product));
     }
     if (slug != null) {
-      queryParams.addAll(_queryParams('', 'slug', slug));
+      queryParams.addAll(_queryParams('slug', slug));
     }
 
     const contentTypes = <String>[];
@@ -3729,7 +3727,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -3811,7 +3809,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -4173,7 +4171,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -4239,7 +4237,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -4309,7 +4307,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -4670,43 +4668,43 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (hideEmpty != null) {
-      queryParams.addAll(_queryParams('', 'hide_empty', hideEmpty));
+      queryParams.addAll(_queryParams('hide_empty', hideEmpty));
     }
     if (parent != null) {
-      queryParams.addAll(_queryParams('', 'parent', parent));
+      queryParams.addAll(_queryParams('parent', parent));
     }
     if (product != null) {
-      queryParams.addAll(_queryParams('', 'product', product));
+      queryParams.addAll(_queryParams('product', product));
     }
     if (slug != null) {
-      queryParams.addAll(_queryParams('', 'slug', slug));
+      queryParams.addAll(_queryParams('slug', slug));
     }
 
     const contentTypes = <String>[];
@@ -4832,7 +4830,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -4902,7 +4900,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -5331,95 +5329,94 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (after != null) {
-      queryParams.addAll(_queryParams('', 'after', after));
+      queryParams.addAll(_queryParams('after', after));
     }
     if (before != null) {
-      queryParams.addAll(_queryParams('', 'before', before));
+      queryParams.addAll(_queryParams('before', before));
     }
     if (modifiedAfter != null) {
-      queryParams.addAll(_queryParams('', 'modified_after', modifiedAfter));
+      queryParams.addAll(_queryParams('modified_after', modifiedAfter));
     }
     if (modifiedBefore != null) {
-      queryParams.addAll(_queryParams('', 'modified_before', modifiedBefore));
+      queryParams.addAll(_queryParams('modified_before', modifiedBefore));
     }
     if (datesAreGmt != null) {
-      queryParams.addAll(_queryParams('', 'dates_are_gmt', datesAreGmt));
+      queryParams.addAll(_queryParams('dates_are_gmt', datesAreGmt));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (parent != null) {
-      queryParams.addAll(_queryParams('multi', 'parent', parent));
+      queryParams.addAll(_queryParams('parent', parent));
     }
     if (parentExclude != null) {
-      queryParams
-          .addAll(_queryParams('multi', 'parent_exclude', parentExclude));
+      queryParams.addAll(_queryParams('parent_exclude', parentExclude));
     }
     if (slug != null) {
-      queryParams.addAll(_queryParams('', 'slug', slug));
+      queryParams.addAll(_queryParams('slug', slug));
     }
     if (status != null) {
-      queryParams.addAll(_queryParams('', 'status', status));
+      queryParams.addAll(_queryParams('status', status));
     }
     if (type != null) {
-      queryParams.addAll(_queryParams('', 'type', type));
+      queryParams.addAll(_queryParams('type', type));
     }
     if (sku != null) {
-      queryParams.addAll(_queryParams('', 'sku', sku));
+      queryParams.addAll(_queryParams('sku', sku));
     }
     if (featured != null) {
-      queryParams.addAll(_queryParams('', 'featured', featured));
+      queryParams.addAll(_queryParams('featured', featured));
     }
     if (category != null) {
-      queryParams.addAll(_queryParams('', 'category', category));
+      queryParams.addAll(_queryParams('category', category));
     }
     if (tag != null) {
-      queryParams.addAll(_queryParams('', 'tag', tag));
+      queryParams.addAll(_queryParams('tag', tag));
     }
     if (shippingClass != null) {
-      queryParams.addAll(_queryParams('', 'shipping_class', shippingClass));
+      queryParams.addAll(_queryParams('shipping_class', shippingClass));
     }
     if (attribute != null) {
-      queryParams.addAll(_queryParams('', 'attribute', attribute));
+      queryParams.addAll(_queryParams('attribute', attribute));
     }
     if (attributeTerm != null) {
-      queryParams.addAll(_queryParams('', 'attribute_term', attributeTerm));
+      queryParams.addAll(_queryParams('attribute_term', attributeTerm));
     }
     if (onSale != null) {
-      queryParams.addAll(_queryParams('', 'on_sale', onSale));
+      queryParams.addAll(_queryParams('on_sale', onSale));
     }
     if (minPrice != null) {
-      queryParams.addAll(_queryParams('', 'min_price', minPrice));
+      queryParams.addAll(_queryParams('min_price', minPrice));
     }
     if (maxPrice != null) {
-      queryParams.addAll(_queryParams('', 'max_price', maxPrice));
+      queryParams.addAll(_queryParams('max_price', maxPrice));
     }
     if (stockStatus != null) {
-      queryParams.addAll(_queryParams('', 'stock_status', stockStatus));
+      queryParams.addAll(_queryParams('stock_status', stockStatus));
     }
 
     const contentTypes = <String>[];
@@ -5630,7 +5627,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -5700,7 +5697,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -6106,74 +6103,73 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (after != null) {
-      queryParams.addAll(_queryParams('', 'after', after));
+      queryParams.addAll(_queryParams('after', after));
     }
     if (before != null) {
-      queryParams.addAll(_queryParams('', 'before', before));
+      queryParams.addAll(_queryParams('before', before));
     }
     if (modifiedAfter != null) {
-      queryParams.addAll(_queryParams('', 'modified_after', modifiedAfter));
+      queryParams.addAll(_queryParams('modified_after', modifiedAfter));
     }
     if (modifiedBefore != null) {
-      queryParams.addAll(_queryParams('', 'modified_before', modifiedBefore));
+      queryParams.addAll(_queryParams('modified_before', modifiedBefore));
     }
     if (datesAreGmt != null) {
-      queryParams.addAll(_queryParams('', 'dates_are_gmt', datesAreGmt));
+      queryParams.addAll(_queryParams('dates_are_gmt', datesAreGmt));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (parent != null) {
-      queryParams.addAll(_queryParams('multi', 'parent', parent));
+      queryParams.addAll(_queryParams('parent', parent));
     }
     if (parentExclude != null) {
-      queryParams
-          .addAll(_queryParams('multi', 'parent_exclude', parentExclude));
+      queryParams.addAll(_queryParams('parent_exclude', parentExclude));
     }
     if (slug != null) {
-      queryParams.addAll(_queryParams('', 'slug', slug));
+      queryParams.addAll(_queryParams('slug', slug));
     }
     if (status != null) {
-      queryParams.addAll(_queryParams('', 'status', status));
+      queryParams.addAll(_queryParams('status', status));
     }
     if (sku != null) {
-      queryParams.addAll(_queryParams('', 'sku', sku));
+      queryParams.addAll(_queryParams('sku', sku));
     }
     if (onSale != null) {
-      queryParams.addAll(_queryParams('', 'on_sale', onSale));
+      queryParams.addAll(_queryParams('on_sale', onSale));
     }
     if (minPrice != null) {
-      queryParams.addAll(_queryParams('', 'min_price', minPrice));
+      queryParams.addAll(_queryParams('min_price', minPrice));
     }
     if (maxPrice != null) {
-      queryParams.addAll(_queryParams('', 'max_price', maxPrice));
+      queryParams.addAll(_queryParams('max_price', maxPrice));
     }
     if (stockStatus != null) {
-      queryParams.addAll(_queryParams('', 'stock_status', stockStatus));
+      queryParams.addAll(_queryParams('stock_status', stockStatus));
     }
 
     const contentTypes = <String>[];
@@ -6360,7 +6356,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -6441,7 +6437,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -6862,53 +6858,52 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (after != null) {
-      queryParams.addAll(_queryParams('', 'after', after));
+      queryParams.addAll(_queryParams('after', after));
     }
     if (before != null) {
-      queryParams.addAll(_queryParams('', 'before', before));
+      queryParams.addAll(_queryParams('before', before));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (reviewer != null) {
-      queryParams.addAll(_queryParams('multi', 'reviewer', reviewer));
+      queryParams.addAll(_queryParams('reviewer', reviewer));
     }
     if (reviewerExclude != null) {
-      queryParams
-          .addAll(_queryParams('multi', 'reviewer_exclude', reviewerExclude));
+      queryParams.addAll(_queryParams('reviewer_exclude', reviewerExclude));
     }
     if (reviewerEmail != null) {
-      queryParams.addAll(_queryParams('', 'reviewer_email', reviewerEmail));
+      queryParams.addAll(_queryParams('reviewer_email', reviewerEmail));
     }
     if (product != null) {
-      queryParams.addAll(_queryParams('multi', 'product', product));
+      queryParams.addAll(_queryParams('product', product));
     }
     if (status != null) {
-      queryParams.addAll(_queryParams('', 'status', status));
+      queryParams.addAll(_queryParams('status', status));
     }
 
     const contentTypes = <String>[];
@@ -7049,7 +7044,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -7119,7 +7114,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -7480,43 +7475,43 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (hideEmpty != null) {
-      queryParams.addAll(_queryParams('', 'hide_empty', hideEmpty));
+      queryParams.addAll(_queryParams('hide_empty', hideEmpty));
     }
     if (parent != null) {
-      queryParams.addAll(_queryParams('', 'parent', parent));
+      queryParams.addAll(_queryParams('parent', parent));
     }
     if (product != null) {
-      queryParams.addAll(_queryParams('', 'product', product));
+      queryParams.addAll(_queryParams('product', product));
     }
     if (slug != null) {
-      queryParams.addAll(_queryParams('', 'slug', slug));
+      queryParams.addAll(_queryParams('slug', slug));
     }
 
     const contentTypes = <String>[];
@@ -7643,7 +7638,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -7714,7 +7709,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -8078,43 +8073,43 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (hideEmpty != null) {
-      queryParams.addAll(_queryParams('', 'hide_empty', hideEmpty));
+      queryParams.addAll(_queryParams('hide_empty', hideEmpty));
     }
     if (parent != null) {
-      queryParams.addAll(_queryParams('', 'parent', parent));
+      queryParams.addAll(_queryParams('parent', parent));
     }
     if (product != null) {
-      queryParams.addAll(_queryParams('', 'product', product));
+      queryParams.addAll(_queryParams('product', product));
     }
     if (slug != null) {
-      queryParams.addAll(_queryParams('', 'slug', slug));
+      queryParams.addAll(_queryParams('slug', slug));
     }
 
     const contentTypes = <String>[];
@@ -8240,7 +8235,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -8310,7 +8305,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -8623,7 +8618,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -8685,7 +8680,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -8747,7 +8742,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -8809,7 +8804,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -8871,7 +8866,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -8933,7 +8928,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -9007,16 +9002,16 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (period != null) {
-      queryParams.addAll(_queryParams('', 'period', period));
+      queryParams.addAll(_queryParams('period', period));
     }
     if (dateMin != null) {
-      queryParams.addAll(_queryParams('', 'date_min', dateMin));
+      queryParams.addAll(_queryParams('date_min', dateMin));
     }
     if (dateMax != null) {
-      queryParams.addAll(_queryParams('', 'date_max', dateMax));
+      queryParams.addAll(_queryParams('date_max', dateMax));
     }
 
     const contentTypes = <String>[];
@@ -9105,16 +9100,16 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (period != null) {
-      queryParams.addAll(_queryParams('', 'period', period));
+      queryParams.addAll(_queryParams('period', period));
     }
     if (dateMin != null) {
-      queryParams.addAll(_queryParams('', 'date_min', dateMin));
+      queryParams.addAll(_queryParams('date_min', dateMin));
     }
     if (dateMax != null) {
-      queryParams.addAll(_queryParams('', 'date_max', dateMax));
+      queryParams.addAll(_queryParams('date_max', dateMax));
     }
 
     const contentTypes = <String>[];
@@ -9195,10 +9190,10 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (namespace != null) {
-      queryParams.addAll(_queryParams('', 'namespace', namespace));
+      queryParams.addAll(_queryParams('namespace', namespace));
     }
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -9253,7 +9248,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -9319,7 +9314,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -9433,7 +9428,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -10126,7 +10121,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -10557,7 +10552,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -10618,7 +10613,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -10929,7 +10924,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -11050,7 +11045,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -11197,25 +11192,25 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (class_ != null) {
-      queryParams.addAll(_queryParams('', 'class', class_));
+      queryParams.addAll(_queryParams('class', class_));
     }
 
     const contentTypes = <String>[];
@@ -11311,7 +11306,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -11381,7 +11376,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];
@@ -11738,40 +11733,40 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
     if (page != null) {
-      queryParams.addAll(_queryParams('', 'page', page));
+      queryParams.addAll(_queryParams('page', page));
     }
     if (perPage != null) {
-      queryParams.addAll(_queryParams('', 'per_page', perPage));
+      queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.addAll(_queryParams('', 'search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (after != null) {
-      queryParams.addAll(_queryParams('', 'after', after));
+      queryParams.addAll(_queryParams('after', after));
     }
     if (before != null) {
-      queryParams.addAll(_queryParams('', 'before', before));
+      queryParams.addAll(_queryParams('before', before));
     }
     if (exclude != null) {
-      queryParams.addAll(_queryParams('multi', 'exclude', exclude));
+      queryParams.addAll(_queryParams('exclude', exclude));
     }
     if (include != null) {
-      queryParams.addAll(_queryParams('multi', 'include', include));
+      queryParams.addAll(_queryParams('include', include));
     }
     if (offset != null) {
-      queryParams.addAll(_queryParams('', 'offset', offset));
+      queryParams.addAll(_queryParams('offset', offset));
     }
     if (order != null) {
-      queryParams.addAll(_queryParams('', 'order', order));
+      queryParams.addAll(_queryParams('order', order));
     }
     if (orderby != null) {
-      queryParams.addAll(_queryParams('', 'orderby', orderby));
+      queryParams.addAll(_queryParams('orderby', orderby));
     }
     if (status != null) {
-      queryParams.addAll(_queryParams('', 'status', status));
+      queryParams.addAll(_queryParams('status', status));
     }
 
     const contentTypes = <String>[];
@@ -11892,7 +11887,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (force != null) {
-      queryParams.addAll(_queryParams('', 'force', force));
+      queryParams.addAll(_queryParams('force', force));
     }
 
     const contentTypes = <String>[];
@@ -11962,7 +11957,7 @@ class Woocommerce {
     final formParams = <String, String>{};
 
     if (context != null) {
-      queryParams.addAll(_queryParams('', 'context', context));
+      queryParams.addAll(_queryParams('context', context));
     }
 
     const contentTypes = <String>[];

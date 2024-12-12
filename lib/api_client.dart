@@ -33,7 +33,7 @@ class WoocommerceClient {
   }
 
   // We don't use a Map<String, String> for queryParams.
-  // If collectionFormat is 'multi', a key might appear multiple times.
+  // If collectionFormat is a key might appear multiple times.
   Future<Response> invokeAPI(
     String path,
     String method,

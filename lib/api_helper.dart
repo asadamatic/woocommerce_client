@@ -15,7 +15,6 @@ class QueryParam {
 
 // Ported from the Java version.
 Iterable<QueryParam> _queryParams(
-  String collectionFormat,
   String name,
   dynamic value,
 ) {
@@ -25,22 +24,9 @@ Iterable<QueryParam> _queryParams(
   final params = <QueryParam>[];
 
   if (value is List) {
-    if (collectionFormat == 'multi') {
-      return value.map(
-        (dynamic v) => QueryParam(name, parameterToString(v)),
-      );
-    }
-
-    // Default collection format is 'csv'.
-    if (collectionFormat.isEmpty) {
-      collectionFormat = 'csv'; // ignore: parameter_assignments
-    }
-
-    final delimiter = _delimiters[collectionFormat] ?? ',';
-
     params.add(QueryParam(
       name,
-      value.map<dynamic>(parameterToString).join(delimiter),
+      parameterToString(value),
     ));
   } else if (value != null) {
     params.add(QueryParam(name, parameterToString(value)));
