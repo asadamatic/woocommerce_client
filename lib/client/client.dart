@@ -5338,8 +5338,7 @@ class Woocommerce {
       queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      postBody = {"search": search};
-      // queryParams.addAll(_queryParams('search', search));
+      queryParams.addAll(_queryParams('search', search));
     }
     if (after != null) {
       queryParams.addAll(_queryParams('after', after));
