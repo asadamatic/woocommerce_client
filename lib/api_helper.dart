@@ -9,8 +9,14 @@ class QueryParam {
   final String value;
 
   @override
-  String toString() =>
-      '${Uri.encodeQueryComponent(name)}=${Uri.encodeComponent('"$value"')}';
+  String toString() {
+    if (name == 'search') {
+      // Special handling for search parameter
+      return '${Uri.encodeQueryComponent(name)}=${Uri.encodeComponent('"$value"')}';
+    }
+    // Default encoding for other parameters
+    return '${Uri.encodeQueryComponent(name)}=${Uri.encodeQueryComponent(value)}';
+  }
 }
 
 // Ported from the Java version.
