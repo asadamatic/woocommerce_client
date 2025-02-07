@@ -164,58 +164,36 @@ class Customer1Billing {
     final json = <String, dynamic>{};
     if (this.firstName != null) {
       json[r'first_name'] = this.firstName;
-    } else {
-      json[r'first_name'] = null;
     }
     if (this.lastName != null) {
       json[r'last_name'] = this.lastName;
-    } else {
-      json[r'last_name'] = null;
     }
     if (this.company != null) {
       json[r'company'] = this.company;
-    } else {
-      json[r'company'] = null;
     }
     if (this.address1 != null) {
       json[r'address_1'] = this.address1;
-    } else {
-      json[r'address_1'] = null;
     }
     if (this.address2 != null) {
       json[r'address_2'] = this.address2;
-    } else {
-      json[r'address_2'] = null;
     }
     if (this.city != null) {
       json[r'city'] = this.city;
-    } else {
-      json[r'city'] = null;
     }
     if (this.state != null) {
       json[r'state'] = this.state;
-    } else {
-      json[r'state'] = null;
     }
     if (this.postcode != null) {
       json[r'postcode'] = this.postcode;
-    } else {
-      json[r'postcode'] = null;
     }
     if (this.country != null) {
       json[r'country'] = this.country;
-    } else {
-      json[r'country'] = null;
     }
     if (this.email != null) {
       json[r'email'] = this.email;
-    } else {
-      json[r'email'] = null;
     }
     if (this.phone != null) {
       json[r'phone'] = this.phone;
-    } else {
-      json[r'phone'] = null;
     }
     return json;
   }

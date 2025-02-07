@@ -120,40 +120,28 @@ class Customer2 {
     final json = <String, dynamic>{};
     if (this.email != null) {
       json[r'email'] = this.email;
-    } else {
-      json[r'email'] = null;
     }
     if (this.firstName != null) {
       json[r'first_name'] = this.firstName;
-    } else {
-      json[r'first_name'] = null;
     }
     if (this.lastName != null) {
       json[r'last_name'] = this.lastName;
-    } else {
-      json[r'last_name'] = null;
     }
     if (this.username != null) {
       json[r'username'] = this.username;
-    } else {
-      json[r'username'] = null;
     }
     if (this.password != null) {
       json[r'password'] = this.password;
-    } else {
-      json[r'password'] = null;
     }
     if (this.billing != null) {
       json[r'billing'] = this.billing;
-    } else {
-      json[r'billing'] = null;
     }
     if (this.shipping != null) {
       json[r'shipping'] = this.shipping;
-    } else {
-      json[r'shipping'] = null;
     }
-    json[r'meta_data'] = this.metaData;
+    if (this.metaData.isNotEmpty) {
+      json[r'meta_data'] = this.metaData;
+    }
     return json;
   }
 
