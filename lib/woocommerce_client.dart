@@ -11,6 +11,7 @@ import 'package:crypto/crypto.dart' as crypto;
 
 import 'package:collection/collection.dart';
 import 'package:http/http.dart';
+import 'package:http/io_client.dart';
 
 part 'utils/query_string.dart';
 

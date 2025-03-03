@@ -68,18 +68,12 @@ class ShopCoupon1MetaDataInner {
     final json = <String, dynamic>{};
     if (this.id != null) {
       json[r'id'] = this.id;
-    } else {
-      json[r'id'] = null;
     }
     if (this.key != null) {
       json[r'key'] = this.key;
-    } else {
-      json[r'key'] = null;
     }
     if (this.value != null) {
       json[r'value'] = this.value;
-    } else {
-      json[r'value'] = null;
     }
     return json;
   }
