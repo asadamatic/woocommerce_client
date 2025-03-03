@@ -180,53 +180,33 @@ class ShopOrder1 {
     final json = <String, dynamic>{};
     if (this.parentId != null) {
       json[r'parent_id'] = this.parentId;
-    } else {
-      json[r'parent_id'] = null;
     }
     if (this.status != null) {
       json[r'status'] = this.status;
-    } else {
-      json[r'status'] = null;
     }
     if (this.currency != null) {
       json[r'currency'] = this.currency;
-    } else {
-      json[r'currency'] = null;
     }
     if (this.customerId != null) {
       json[r'customer_id'] = this.customerId;
-    } else {
-      json[r'customer_id'] = null;
     }
     if (this.customerNote != null) {
       json[r'customer_note'] = this.customerNote;
-    } else {
-      json[r'customer_note'] = null;
     }
     if (this.billing != null) {
       json[r'billing'] = this.billing;
-    } else {
-      json[r'billing'] = null;
     }
     if (this.shipping != null) {
       json[r'shipping'] = this.shipping;
-    } else {
-      json[r'shipping'] = null;
     }
     if (this.paymentMethod != null) {
       json[r'payment_method'] = this.paymentMethod;
-    } else {
-      json[r'payment_method'] = null;
     }
     if (this.paymentMethodTitle != null) {
       json[r'payment_method_title'] = this.paymentMethodTitle;
-    } else {
-      json[r'payment_method_title'] = null;
     }
     if (this.transactionId != null) {
       json[r'transaction_id'] = this.transactionId;
-    } else {
-      json[r'transaction_id'] = null;
     }
     json[r'meta_data'] = this.metaData;
     if (this.lineItems.isNotEmpty) {
@@ -259,8 +239,6 @@ class ShopOrder1 {
 
     if (this.setPaid != null) {
       json[r'set_paid'] = this.setPaid;
-    } else {
-      json[r'set_paid'] = null;
     }
     return json;
   }
