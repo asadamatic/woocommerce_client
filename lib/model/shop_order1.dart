@@ -41,7 +41,7 @@ class ShopOrder1 {
   int? parentId;
 
   /// Order status.
-  ShopOrder1StatusEnum? status;
+  String? status;
 
   /// Currency the order was created with, in ISO format.
   ShopOrder1CurrencyEnum? currency;
@@ -265,7 +265,7 @@ class ShopOrder1 {
 
       return ShopOrder1(
         parentId: mapValueOfType<int>(json, r'parent_id'),
-        status: ShopOrder1StatusEnum.fromJson(json[r'status']),
+        status: json[r'status'],
         currency: ShopOrder1CurrencyEnum.fromJson(json[r'currency']),
         customerId: mapValueOfType<int>(json, r'customer_id'),
         customerNote: mapValueOfType<String>(json, r'customer_note'),
@@ -341,105 +341,6 @@ class ShopOrder1 {
   static const requiredKeys = <String>{};
 }
 
-/// Order status.
-class ShopOrder1StatusEnum {
-  /// Instantiate a new enum with the provided [value].
-  const ShopOrder1StatusEnum._(this.value);
-
-  /// The underlying value of this enum member.
-  final String value;
-
-  @override
-  String toString() => value;
-
-  String toJson() => value;
-
-  static const pending = ShopOrder1StatusEnum._(r'pending');
-  static const processing = ShopOrder1StatusEnum._(r'processing');
-  static const onHold = ShopOrder1StatusEnum._(r'on-hold');
-  static const completed = ShopOrder1StatusEnum._(r'completed');
-  static const cancelled = ShopOrder1StatusEnum._(r'cancelled');
-  static const refunded = ShopOrder1StatusEnum._(r'refunded');
-  static const failed = ShopOrder1StatusEnum._(r'failed');
-
-  /// List of all possible values in this [enum][ShopOrder1StatusEnum].
-  static const values = <ShopOrder1StatusEnum>[
-    pending,
-    processing,
-    onHold,
-    completed,
-    cancelled,
-    refunded,
-    failed,
-  ];
-
-  static ShopOrder1StatusEnum? fromJson(dynamic value) =>
-      ShopOrder1StatusEnumTypeTransformer().decode(value);
-
-  static List<ShopOrder1StatusEnum> listFromJson(
-    dynamic json, {
-    bool growable = false,
-  }) {
-    final result = <ShopOrder1StatusEnum>[];
-    if (json is List && json.isNotEmpty) {
-      for (final row in json) {
-        final value = ShopOrder1StatusEnum.fromJson(row);
-        if (value != null) {
-          result.add(value);
-        }
-      }
-    }
-    return result.toList(growable: growable);
-  }
-}
-
-/// Transformation class that can [encode] an instance of [ShopOrder1StatusEnum] to String,
-/// and [decode] dynamic data back to [ShopOrder1StatusEnum].
-class ShopOrder1StatusEnumTypeTransformer {
-  factory ShopOrder1StatusEnumTypeTransformer() =>
-      _instance ??= const ShopOrder1StatusEnumTypeTransformer._();
-
-  const ShopOrder1StatusEnumTypeTransformer._();
-
-  String encode(ShopOrder1StatusEnum data) => data.value;
-
-  /// Decodes a [dynamic value][data] to a ShopOrder1StatusEnum.
-  ///
-  /// If [allowNull] is true and the [dynamic value][data] cannot be decoded successfully,
-  /// then null is returned. However, if [allowNull] is false and the [dynamic value][data]
-  /// cannot be decoded successfully, then an [UnimplementedError] is thrown.
-  ///
-  /// The [allowNull] is very handy when an API changes and a new enum value is added or removed,
-  /// and users are still using an old app with the old code.
-  ShopOrder1StatusEnum? decode(dynamic data, {bool allowNull = true}) {
-    if (data != null) {
-      switch (data) {
-        case r'pending':
-          return ShopOrder1StatusEnum.pending;
-        case r'processing':
-          return ShopOrder1StatusEnum.processing;
-        case r'on-hold':
-          return ShopOrder1StatusEnum.onHold;
-        case r'completed':
-          return ShopOrder1StatusEnum.completed;
-        case r'cancelled':
-          return ShopOrder1StatusEnum.cancelled;
-        case r'refunded':
-          return ShopOrder1StatusEnum.refunded;
-        case r'failed':
-          return ShopOrder1StatusEnum.failed;
-        default:
-          if (!allowNull) {
-            throw ArgumentError('Unknown enum value to decode: $data');
-          }
-      }
-    }
-    return null;
-  }
-
-  /// Singleton [ShopOrder1StatusEnumTypeTransformer] instance.
-  static ShopOrder1StatusEnumTypeTransformer? _instance;
-}
 
 /// Currency the order was created with, in ISO format.
 class ShopOrder1CurrencyEnum {
