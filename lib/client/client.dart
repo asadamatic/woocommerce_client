@@ -66,6 +66,7 @@ class Woocommerce {
   ///   Limit result set to resources with a specific code.
   Future<Response> couponsGetWithHttpInfo({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -93,6 +94,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -198,6 +200,7 @@ class Woocommerce {
   ///   Limit result set to resources with a specific code.
   Future<List<ShopCoupon>?> couponsGet({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -215,6 +218,7 @@ class Woocommerce {
   }) async {
     final response = await couponsGetWithHttpInfo(
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -328,6 +332,7 @@ class Woocommerce {
   Future<Response> couponsIdGetWithHttpInfo(
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/coupons/{id}'.replaceAll('{id}', id.toString());
@@ -341,6 +346,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -366,10 +372,12 @@ class Woocommerce {
   Future<ShopCoupon?> couponsIdGet(
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await couponsIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -645,6 +653,7 @@ class Woocommerce {
   Future<Response> customersCustomerIdDownloadsGetWithHttpInfo(
     int customerId, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/customers/{customer_id}/downloads'
@@ -659,6 +668,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -684,10 +694,12 @@ class Woocommerce {
   Future<List<CustomerDownload>?> customersCustomerIdDownloadsGet(
     int customerId, {
     String? context,
+    String? lang,
   }) async {
     final response = await customersCustomerIdDownloadsGetWithHttpInfo(
       customerId,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -743,6 +755,7 @@ class Woocommerce {
   ///   Limit result set to resources with a specific role.
   Future<Response> customersGetWithHttpInfo({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -766,6 +779,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -847,6 +861,7 @@ class Woocommerce {
   ///   Limit result set to resources with a specific role.
   Future<List<Customer>?> customersGet({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -860,6 +875,7 @@ class Woocommerce {
   }) async {
     final response = await customersGetWithHttpInfo(
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -981,6 +997,7 @@ class Woocommerce {
   Future<Response> customersIdGetWithHttpInfo(
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/customers/{id}'.replaceAll('{id}', id.toString());
@@ -994,6 +1011,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -1019,10 +1037,12 @@ class Woocommerce {
   Future<Customer?> customersIdGet(
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await customersIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -1743,6 +1763,7 @@ class Woocommerce {
   ///   Number of decimal points to use in each resource.
   Future<Response> ordersGetWithHttpInfo({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -1775,6 +1796,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -1910,6 +1932,7 @@ class Woocommerce {
   ///   Number of decimal points to use in each resource.
   Future<List<ShopOrder>?> ordersGet({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -1932,6 +1955,7 @@ class Woocommerce {
   }) async {
     final response = await ordersGetWithHttpInfo(
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -2050,6 +2074,7 @@ class Woocommerce {
   Future<Response> ordersIdGetWithHttpInfo(
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/orders/{id}'.replaceAll('{id}', id.toString());
@@ -2063,6 +2088,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -2088,10 +2114,12 @@ class Woocommerce {
   Future<ShopOrder?> ordersIdGet(
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await ordersIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -2315,6 +2343,7 @@ class Woocommerce {
   Future<Response> ordersOrderIdNotesGetWithHttpInfo(
     int orderId, {
     String? context,
+    String? lang,
     String? type,
   }) async {
     // ignore: prefer_const_declarations
@@ -2330,6 +2359,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (type != null) {
       queryParams.addAll(_queryParams('type', type));
@@ -2361,11 +2391,13 @@ class Woocommerce {
   Future<List<OrderNote>?> ordersOrderIdNotesGet(
     int orderId, {
     String? context,
+    String? lang,
     String? type,
   }) async {
     final response = await ordersOrderIdNotesGetWithHttpInfo(
       orderId,
       context: context,
+      lang: lang,
       type: type,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
@@ -2481,6 +2513,7 @@ class Woocommerce {
     int id,
     int orderId, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/orders/{order_id}/notes/{id}'
@@ -2496,6 +2529,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -2525,11 +2559,13 @@ class Woocommerce {
     int id,
     int orderId, {
     String? context,
+    String? lang,
   }) async {
     final response = await ordersOrderIdNotesIdGetWithHttpInfo(
       id,
       orderId,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -2671,6 +2707,7 @@ class Woocommerce {
   Future<Response> ordersOrderIdRefundsGetWithHttpInfo(
     int orderId, {
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -2701,6 +2738,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -2822,6 +2860,7 @@ class Woocommerce {
   Future<List<ShopOrderRefund>?> ordersOrderIdRefundsGet(
     int orderId, {
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -2842,6 +2881,7 @@ class Woocommerce {
     final response = await ordersOrderIdRefundsGetWithHttpInfo(
       orderId,
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -2972,6 +3012,7 @@ class Woocommerce {
     int orderId,
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/orders/{order_id}/refunds/{id}'
@@ -2987,6 +3028,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -3016,11 +3058,13 @@ class Woocommerce {
     int orderId,
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await ordersOrderIdRefundsIdGetWithHttpInfo(
       orderId,
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -3165,6 +3209,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> paymentGatewaysGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/payment_gateways';
@@ -3178,6 +3223,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -3199,9 +3245,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<List<PaymentGateway>?> paymentGatewaysGet({
     String? context,
+    String? lang,
   }) async {
     final response = await paymentGatewaysGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -3231,6 +3279,7 @@ class Woocommerce {
   Future<Response> paymentGatewaysIdGetWithHttpInfo(
     String id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/payment_gateways/{id}'.replaceAll('{id}', id);
@@ -3244,6 +3293,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -3269,10 +3319,12 @@ class Woocommerce {
   Future<PaymentGateway?> paymentGatewaysIdGet(
     String id, {
     String? context,
+    String? lang,
   }) async {
     final response = await paymentGatewaysIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -3529,6 +3581,7 @@ class Woocommerce {
   Future<Response> productsAttributesAttributeIdTermsGetWithHttpInfo(
     int attributeId, {
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -3555,6 +3608,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -3652,6 +3706,7 @@ class Woocommerce {
   Future<List<ProductAttributeTerm>?> productsAttributesAttributeIdTermsGet(
     int attributeId, {
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -3668,6 +3723,7 @@ class Woocommerce {
     final response = await productsAttributesAttributeIdTermsGetWithHttpInfo(
       attributeId,
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -3795,6 +3851,7 @@ class Woocommerce {
     int id,
     int attributeId, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/products/attributes/{attribute_id}/terms/{id}'
@@ -3810,6 +3867,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -3839,11 +3897,13 @@ class Woocommerce {
     int id,
     int attributeId, {
     String? context,
+    String? lang,
   }) async {
     final response = await productsAttributesAttributeIdTermsIdGetWithHttpInfo(
       id,
       attributeId,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -4159,6 +4219,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> productsAttributesGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/products/attributes';
@@ -4172,6 +4233,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -4193,9 +4255,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<List<ProductAttribute>?> productsAttributesGet({
     String? context,
+    String? lang,
   }) async {
     final response = await productsAttributesGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -4295,6 +4359,7 @@ class Woocommerce {
   Future<Response> productsAttributesIdGetWithHttpInfo(
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/products/attributes/{id}'.replaceAll('{id}', id.toString());
@@ -4308,6 +4373,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -4333,10 +4399,12 @@ class Woocommerce {
   Future<ProductAttribute?> productsAttributesIdGet(
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await productsAttributesIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -4644,6 +4712,7 @@ class Woocommerce {
   ///   Limit result set to resources with a specific slug.
   Future<Response> productsCategoriesGetWithHttpInfo({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -4669,6 +4738,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -4762,6 +4832,7 @@ class Woocommerce {
   ///   Limit result set to resources with a specific slug.
   Future<List<ProductCat>?> productsCategoriesGet({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -4777,6 +4848,7 @@ class Woocommerce {
   }) async {
     final response = await productsCategoriesGetWithHttpInfo(
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -4888,6 +4960,7 @@ class Woocommerce {
   Future<Response> productsCategoriesIdGetWithHttpInfo(
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/products/categories/{id}'.replaceAll('{id}', id.toString());
@@ -4901,6 +4974,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -4926,10 +5000,12 @@ class Woocommerce {
   Future<ProductCat?> productsCategoriesIdGet(
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await productsCategoriesIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -5288,6 +5364,7 @@ class Woocommerce {
   ///   Limit result set to products with specified stock status.
   Future<Response> productsGetWithHttpInfo({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -5330,6 +5407,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -5525,6 +5603,7 @@ class Woocommerce {
   ///   Limit result set to products with specified stock status.
   Future<List<Product>?> productsGet({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -5557,6 +5636,7 @@ class Woocommerce {
   }) async {
     final response = await productsGetWithHttpInfo(
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -5685,6 +5765,7 @@ class Woocommerce {
   Future<Response> productsIdGetWithHttpInfo(
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/products/{id}'.replaceAll('{id}', id.toString());
@@ -5698,6 +5779,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -5723,10 +5805,12 @@ class Woocommerce {
   Future<Product?> productsIdGet(
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await productsIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -6068,6 +6152,7 @@ class Woocommerce {
   Future<Response> productsProductIdVariationsGetWithHttpInfo(
     int productId, {
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -6104,6 +6189,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -6261,6 +6347,7 @@ class Woocommerce {
   Future<List<ProductVariation>?> productsProductIdVariationsGet(
     int productId, {
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -6287,6 +6374,7 @@ class Woocommerce {
     final response = await productsProductIdVariationsGetWithHttpInfo(
       productId,
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -6423,6 +6511,7 @@ class Woocommerce {
     int productId,
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/products/{product_id}/variations/{id}'
@@ -6438,6 +6527,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -6467,11 +6557,13 @@ class Woocommerce {
     int productId,
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await productsProductIdVariationsIdGetWithHttpInfo(
       productId,
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -6831,6 +6923,7 @@ class Woocommerce {
   ///   Limit result set to reviews assigned a specific status.
   Future<Response> productsReviewsGetWithHttpInfo({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -6859,6 +6952,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -6970,6 +7064,7 @@ class Woocommerce {
   ///   Limit result set to reviews assigned a specific status.
   Future<List<ProductReview>?> productsReviewsGet({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -6988,6 +7083,7 @@ class Woocommerce {
   }) async {
     final response = await productsReviewsGetWithHttpInfo(
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -7102,6 +7198,7 @@ class Woocommerce {
   Future<Response> productsReviewsIdGetWithHttpInfo(
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/products/reviews/{id}'.replaceAll('{id}', id.toString());
@@ -7115,6 +7212,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -7140,10 +7238,12 @@ class Woocommerce {
   Future<ProductReview?> productsReviewsIdGet(
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await productsReviewsIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -7451,6 +7551,7 @@ class Woocommerce {
   ///   Limit result set to resources with a specific slug.
   Future<Response> productsShippingClassesGetWithHttpInfo({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -7476,6 +7577,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -7569,6 +7671,7 @@ class Woocommerce {
   ///   Limit result set to resources with a specific slug.
   Future<List<ProductShippingClass>?> productsShippingClassesGet({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -7584,6 +7687,7 @@ class Woocommerce {
   }) async {
     final response = await productsShippingClassesGetWithHttpInfo(
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -7696,6 +7800,7 @@ class Woocommerce {
   Future<Response> productsShippingClassesIdGetWithHttpInfo(
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path =
@@ -7710,6 +7815,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -7735,10 +7841,12 @@ class Woocommerce {
   Future<ProductShippingClass?> productsShippingClassesIdGet(
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await productsShippingClassesIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -8049,6 +8157,7 @@ class Woocommerce {
   ///   Limit result set to resources with a specific slug.
   Future<Response> productsTagsGetWithHttpInfo({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -8074,6 +8183,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -8167,6 +8277,7 @@ class Woocommerce {
   ///   Limit result set to resources with a specific slug.
   Future<List<ProductTag>?> productsTagsGet({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -8182,6 +8293,7 @@ class Woocommerce {
   }) async {
     final response = await productsTagsGetWithHttpInfo(
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -8293,6 +8405,7 @@ class Woocommerce {
   Future<Response> productsTagsIdGetWithHttpInfo(
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/products/tags/{id}'.replaceAll('{id}', id.toString());
@@ -8306,6 +8419,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -8331,10 +8445,12 @@ class Woocommerce {
   Future<ProductTag?> productsTagsIdGet(
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await productsTagsIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -8606,6 +8722,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> reportsCouponsTotalsGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/reports/coupons/totals';
@@ -8619,6 +8736,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -8640,9 +8758,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<List<ReportCouponTotal>?> reportsCouponsTotalsGet({
     String? context,
+    String? lang,
   }) async {
     final response = await reportsCouponsTotalsGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -8668,6 +8788,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> reportsCustomersTotalsGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/reports/customers/totals';
@@ -8681,6 +8802,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -8702,9 +8824,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<List<ReportCustomerTotal>?> reportsCustomersTotalsGet({
     String? context,
+    String? lang,
   }) async {
     final response = await reportsCustomersTotalsGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -8730,6 +8854,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> reportsGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/reports';
@@ -8743,6 +8868,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -8764,9 +8890,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<List<Report>?> reportsGet({
     String? context,
+    String? lang,
   }) async {
     final response = await reportsGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -8792,6 +8920,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> reportsOrdersTotalsGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/reports/orders/totals';
@@ -8805,6 +8934,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -8826,9 +8956,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<List<ReportOrderTotal>?> reportsOrdersTotalsGet({
     String? context,
+    String? lang,
   }) async {
     final response = await reportsOrdersTotalsGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -8854,6 +8986,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> reportsProductsTotalsGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/reports/products/totals';
@@ -8867,6 +9000,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -8888,9 +9022,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<List<ReportProductTotal>?> reportsProductsTotalsGet({
     String? context,
+    String? lang,
   }) async {
     final response = await reportsProductsTotalsGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -8916,6 +9052,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> reportsReviewsTotalsGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/reports/reviews/totals';
@@ -8929,6 +9066,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -8950,9 +9088,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<List<ReportReviewTotal>?> reportsReviewsTotalsGet({
     String? context,
+    String? lang,
   }) async {
     final response = await reportsReviewsTotalsGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -8987,6 +9127,7 @@ class Woocommerce {
   ///   Return sales for a specific end date, the date need to be in the YYYY-MM-DD format.
   Future<Response> reportsSalesGetWithHttpInfo({
     String? context,
+    String? lang,
     String? period,
     DateTime? dateMin,
     DateTime? dateMax,
@@ -9003,6 +9144,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (period != null) {
       queryParams.addAll(_queryParams('period', period));
@@ -9042,12 +9184,14 @@ class Woocommerce {
   ///   Return sales for a specific end date, the date need to be in the YYYY-MM-DD format.
   Future<List<SalesReport>?> reportsSalesGet({
     String? context,
+    String? lang,
     String? period,
     DateTime? dateMin,
     DateTime? dateMax,
   }) async {
     final response = await reportsSalesGetWithHttpInfo(
       context: context,
+      lang: lang,
       period: period,
       dateMin: dateMin,
       dateMax: dateMax,
@@ -9085,6 +9229,7 @@ class Woocommerce {
   ///   Return sales for a specific end date, the date need to be in the YYYY-MM-DD format.
   Future<Response> reportsTopSellersGetWithHttpInfo({
     String? context,
+    String? lang,
     String? period,
     DateTime? dateMin,
     DateTime? dateMax,
@@ -9101,6 +9246,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (period != null) {
       queryParams.addAll(_queryParams('period', period));
@@ -9140,12 +9286,14 @@ class Woocommerce {
   ///   Return sales for a specific end date, the date need to be in the YYYY-MM-DD format.
   Future<List<TopSellersReport>?> reportsTopSellersGet({
     String? context,
+    String? lang,
     String? period,
     DateTime? dateMin,
     DateTime? dateMax,
   }) async {
     final response = await reportsTopSellersGetWithHttpInfo(
       context: context,
+      lang: lang,
       period: period,
       dateMin: dateMin,
       dateMax: dateMax,
@@ -9178,6 +9326,7 @@ class Woocommerce {
   Future<Response> rootGetWithHttpInfo({
     String? namespace,
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/';
@@ -9194,6 +9343,7 @@ class Woocommerce {
     }
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -9219,10 +9369,12 @@ class Woocommerce {
   Future<void> rootGet({
     String? namespace,
     String? context,
+    String? lang,
   }) async {
     final response = await rootGetWithHttpInfo(
       namespace: namespace,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -9236,6 +9388,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> shippingMethodsGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/shipping_methods';
@@ -9249,6 +9402,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -9270,9 +9424,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<List<ShippingMethod>?> shippingMethodsGet({
     String? context,
+    String? lang,
   }) async {
     final response = await shippingMethodsGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -9302,6 +9458,7 @@ class Woocommerce {
   Future<Response> shippingMethodsIdGetWithHttpInfo(
     String id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/shipping_methods/{id}'.replaceAll('{id}', id);
@@ -9315,6 +9472,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -9340,10 +9498,12 @@ class Woocommerce {
   Future<ShippingMethod?> shippingMethodsIdGet(
     String id, {
     String? context,
+    String? lang,
   }) async {
     final response = await shippingMethodsIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -10540,6 +10700,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> systemStatusGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/system_status';
@@ -10553,6 +10714,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -10574,9 +10736,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<SystemStatus?> systemStatusGet({
     String? context,
+    String? lang,
   }) async {
     final response = await systemStatusGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -10601,6 +10765,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> systemStatusToolsGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/system_status/tools';
@@ -10614,6 +10779,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -10635,9 +10801,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<List<SystemStatusTool>?> systemStatusToolsGet({
     String? context,
+    String? lang,
   }) async {
     final response = await systemStatusToolsGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -10912,6 +11080,7 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<Response> taxesClassesGetWithHttpInfo({
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/taxes/classes';
@@ -10925,6 +11094,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -10946,9 +11116,11 @@ class Woocommerce {
   ///   Scope under which the request is made; determines fields present in response.
   Future<List<TaxClass>?> taxesClassesGet({
     String? context,
+    String? lang,
   }) async {
     final response = await taxesClassesGetWithHttpInfo(
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -11174,6 +11346,7 @@ class Woocommerce {
   ///   Sort by tax class.
   Future<Response> taxesGetWithHttpInfo({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     int? offset,
@@ -11193,6 +11366,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -11250,6 +11424,7 @@ class Woocommerce {
   ///   Sort by tax class.
   Future<List<Tax>?> taxesGet({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     int? offset,
@@ -11259,6 +11434,7 @@ class Woocommerce {
   }) async {
     final response = await taxesGetWithHttpInfo(
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       offset: offset,
@@ -11364,6 +11540,7 @@ class Woocommerce {
   Future<Response> taxesIdGetWithHttpInfo(
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/taxes/{id}'.replaceAll('{id}', id.toString());
@@ -11377,6 +11554,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -11402,10 +11580,12 @@ class Woocommerce {
   Future<Tax?> taxesIdGet(
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await taxesIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
@@ -11710,6 +11890,7 @@ class Woocommerce {
   ///   Limit result set to webhooks assigned a specific status.
   Future<Response> webhooksGetWithHttpInfo({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -11734,6 +11915,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
       queryParams.addAll(_queryParams('page', page));
@@ -11821,6 +12003,7 @@ class Woocommerce {
   ///   Limit result set to webhooks assigned a specific status.
   Future<List<Webhook>?> webhooksGet({
     String? context,
+    String? lang,
     int? page,
     int? perPage,
     String? search,
@@ -11835,6 +12018,7 @@ class Woocommerce {
   }) async {
     final response = await webhooksGetWithHttpInfo(
       context: context,
+      lang: lang,
       page: page,
       perPage: perPage,
       search: search,
@@ -11945,6 +12129,7 @@ class Woocommerce {
   Future<Response> webhooksIdGetWithHttpInfo(
     int id, {
     String? context,
+    String? lang,
   }) async {
     // ignore: prefer_const_declarations
     final path = r'/webhooks/{id}'.replaceAll('{id}', id.toString());
@@ -11958,6 +12143,7 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+      queryParams.addAll(_queryParams('lang', lang));
     }
 
     const contentTypes = <String>[];
@@ -11983,10 +12169,12 @@ class Woocommerce {
   Future<Webhook?> webhooksIdGet(
     int id, {
     String? context,
+    String? lang,
   }) async {
     final response = await webhooksIdGetWithHttpInfo(
       id,
       context: context,
+      lang: lang,
     );
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
