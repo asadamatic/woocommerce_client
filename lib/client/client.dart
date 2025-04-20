@@ -2222,10 +2222,8 @@ class Woocommerce {
   ///   Unique identifier for the resource.
   ///
   /// * [ShopOrder1] shopOrder1 (required):
-  Future<Response> ordersIdPostWithHttpInfo(
-    int id,
-    ShopOrder1 shopOrder1,
-  ) async {
+  Future<Response> ordersIdPostWithHttpInfo(int id, ShopOrder1 shopOrder1,
+      {String? lang}) async {
     // ignore: prefer_const_declarations
     final path = r'/orders/{id}'.replaceAll('{id}', id.toString());
 
@@ -2236,6 +2234,9 @@ class Woocommerce {
     final headerParams = <String, String>{};
     final formParams = <String, String>{};
 
+    if (lang != null) {
+      queryParams.addAll(_queryParams('lang', lang));
+    }
     const contentTypes = <String>['application/json'];
 
     return apiClient.invokeAPI(
@@ -2255,14 +2256,9 @@ class Woocommerce {
   ///   Unique identifier for the resource.
   ///
   /// * [ShopOrder1] shopOrder1 (required):
-  Future<ShopOrder?> ordersIdPost(
-    int id,
-    ShopOrder1 shopOrder1,
-  ) async {
-    final response = await ordersIdPostWithHttpInfo(
-      id,
-      shopOrder1,
-    );
+  Future<ShopOrder?> ordersIdPost(int id, ShopOrder1 shopOrder1,
+      {String? lang}) async {
+    final response = await ordersIdPostWithHttpInfo(id, shopOrder1, lang: lang);
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
     }
@@ -5400,39 +5396,39 @@ class Woocommerce {
   ///
   /// * [String] stockStatus:
   ///   Limit result set to products with specified stock status.
-  Future<Response> productsGetWithHttpInfo({
-    String? context,
-    String? lang,
-    int? page,
-    int? perPage,
-    String? search,
-    String? after,
-    String? before,
-    String? modifiedAfter,
-    String? modifiedBefore,
-    bool? datesAreGmt,
-    List<int>? exclude,
-    List<int>? include,
-    int? offset,
-    String? order,
-    String? orderby,
-    List<int>? parent,
-    List<int>? parentExclude,
-    String? slug,
-    String? status,
-    String? type,
-    String? sku,
-    bool? featured,
-    String? category,
-    String? tag,
-    String? shippingClass,
-    String? attribute,
-    String? attributeTerm,
-    bool? onSale,
-    String? minPrice,
-    String? maxPrice,
-    String? stockStatus,
-  }) async {
+  Future<Response> productsGetWithHttpInfo(
+      {String? context,
+      String? lang,
+      int? page,
+      int? perPage,
+      String? search,
+      String? after,
+      String? before,
+      String? modifiedAfter,
+      String? modifiedBefore,
+      bool? datesAreGmt,
+      List<int>? exclude,
+      List<int>? include,
+      int? offset,
+      String? order,
+      String? orderby,
+      List<int>? parent,
+      List<int>? parentExclude,
+      String? slug,
+      String? status,
+      String? type,
+      String? sku,
+      bool? featured,
+      String? category,
+      String? tag,
+      String? shippingClass,
+      String? attribute,
+      String? attributeTerm,
+      bool? onSale,
+      String? minPrice,
+      String? maxPrice,
+      String? stockStatus,
+      bool useCustomSearchQuery = true}) async {
     // ignore: prefer_const_declarations
     final path = r'/products';
 
@@ -5456,7 +5452,11 @@ class Woocommerce {
       queryParams.addAll(_queryParams('per_page', perPage));
     }
     if (search != null) {
-      queryParams.add(SearchQueryParam('search', search));
+      if (useCustomSearchQuery) {
+        queryParams.add(SearchQueryParam('search', search));
+      } else {
+        queryParams.addAll(_queryParams('search', search));
+      }
     }
     if (after != null) {
       queryParams.addAll(_queryParams('after', after));
