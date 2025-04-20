@@ -94,6 +94,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -346,6 +348,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -668,6 +672,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -779,6 +785,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -1011,6 +1019,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -1796,6 +1806,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -2088,6 +2100,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -2359,6 +2373,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (type != null) {
@@ -2529,6 +2545,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -2738,6 +2756,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -3028,6 +3048,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -3223,6 +3245,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -3293,6 +3317,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -3608,6 +3634,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -3867,6 +3895,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -4233,6 +4263,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -4373,6 +4405,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -4738,6 +4772,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -4974,6 +5010,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -5407,6 +5445,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -5779,6 +5819,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -6189,6 +6231,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -6527,6 +6571,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -6952,6 +6998,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -7212,6 +7260,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -7577,6 +7627,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -7815,6 +7867,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -8183,6 +8237,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -8419,6 +8475,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -8736,6 +8794,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -8802,6 +8862,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -8868,6 +8930,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -8934,6 +8998,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -9000,6 +9066,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -9066,6 +9134,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -9144,6 +9214,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (period != null) {
@@ -9246,6 +9318,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (period != null) {
@@ -9343,6 +9417,8 @@ class Woocommerce {
     }
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -9402,6 +9478,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -9472,6 +9550,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -10714,6 +10794,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -10779,6 +10861,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -11094,6 +11178,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -11366,6 +11452,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -11554,6 +11642,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
@@ -11915,6 +12005,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
     if (page != null) {
@@ -12143,6 +12235,8 @@ class Woocommerce {
 
     if (context != null) {
       queryParams.addAll(_queryParams('context', context));
+    }
+    if (lang != null) {
       queryParams.addAll(_queryParams('lang', lang));
     }
 
