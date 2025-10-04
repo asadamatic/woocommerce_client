@@ -5416,6 +5416,8 @@ class Woocommerce {
       List<int>? parentExclude,
       String? slug,
       String? status,
+      List<String>? includeStatus,
+      List<String>? excludeStatus,
       String? type,
       String? sku,
       bool? featured,
@@ -5499,6 +5501,12 @@ class Woocommerce {
     }
     if (status != null) {
       queryParams.addAll(_queryParams('status', status));
+    }
+    if (includeStatus != null) {
+      queryParams.addAll(_queryParams('include_status', includeStatus));
+    }
+    if (excludeStatus != null) {
+      queryParams.addAll(_queryParams('exclude_status', excludeStatus));
     }
     if (type != null) {
       queryParams.addAll(_queryParams('type', type));
@@ -5661,6 +5669,8 @@ class Woocommerce {
       List<int>? parentExclude,
       String? slug,
       String? status,
+      List<String>? includeStatus,
+      List<String>? excludeStatus,
       String? type,
       String? sku,
       bool? featured,
@@ -5694,6 +5704,8 @@ class Woocommerce {
         parentExclude: parentExclude,
         slug: slug,
         status: status,
+        includeStatus: includeStatus,
+        excludeStatus: excludeStatus,
         type: type,
         sku: sku,
         featured: featured,
@@ -6212,6 +6224,8 @@ class Woocommerce {
     List<int>? parentExclude,
     String? slug,
     String? status,
+    List<String>? includeStatus,
+    List<String>? excludeStatus,
     String? sku,
     bool? onSale,
     String? minPrice,
@@ -6285,6 +6299,12 @@ class Woocommerce {
     }
     if (status != null) {
       queryParams.addAll(_queryParams('status', status));
+    }
+    if (includeStatus != null) {
+      queryParams.addAll(_queryParams('include_status', includeStatus));
+    }
+    if (excludeStatus != null) {
+      queryParams.addAll(_queryParams('exclude_status', excludeStatus));
     }
     if (sku != null) {
       queryParams.addAll(_queryParams('sku', sku));
@@ -6409,6 +6429,8 @@ class Woocommerce {
     List<int>? parentExclude,
     String? slug,
     String? status,
+    List<String>? includeStatus,
+    List<String>? excludeStatus,
     String? sku,
     bool? onSale,
     String? minPrice,
@@ -6436,6 +6458,8 @@ class Woocommerce {
       parentExclude: parentExclude,
       slug: slug,
       status: status,
+      includeStatus: includeStatus,
+      excludeStatus: excludeStatus,
       sku: sku,
       onSale: onSale,
       minPrice: minPrice,

@@ -1,12 +1,12 @@
-name: 'woocommerce_client'
-version: '1.0.11'
-description: 'Woocommerce Rest API Dart client package'
-homepage: 'https://github.com/erfanshekari/woocommerce_client'
+name: "woocommerce_client"
+version: "1.0.12"
+description: "Woocommerce Rest API Dart client package"
+homepage: "https://github.com/erfanshekari/woocommerce_client"
 
 environment:
-  sdk: '>=2.12.0 <4.0.0'
+  sdk: ">=2.12.0 <4.0.0"
 
 dependencies:
-  collection: '^1.17.0'
-  http: '^1.2.1'
-  crypto: '^3.0.3'
+  collection: "^1.17.0"
+  http: "^1.2.1"
+  crypto: "^3.0.3"
